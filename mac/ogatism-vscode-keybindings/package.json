@@ -1,0 +1,27 @@
+{
+  "name": "ogatism-vscode-keybindings",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.tasks.build"
+      }
+    ]
+  },
+  "dependencies": {
+    "generator-code": "^1.7.5",
+    "vsce": "^2.15.0",
+    "yo": "^4.3.1"
+  }
+}
