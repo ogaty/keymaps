@@ -1,4 +1,4 @@
-<keymap version="1" name="macOS copy" parent="Mac OS X 10.5+">
+<keymap version="1" name="ogatismMac" parent="Mac OS X 10.5+">
   <action id="Adtui.ZoomOutAction">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
