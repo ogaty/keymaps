@@ -63,6 +63,10 @@
       {
         "key": "shift+cmd+,",
         "command": "editor.action.fontZoomOut"
+      },
+      {
+        "key": "shift+cmd+[IntlRo]",
+        "command": "editor.emmet.action.wrapWithAbbreviation"
       }
     ]
   }
