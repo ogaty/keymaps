@@ -1,4 +1,4 @@
-<keymap version="1" name="ogatyPluginMac" parent="Mac OS X 10.5+">
+<keymap version="1.1.1" name="ogatyPluginMac" parent="Mac OS X 10.5+">
   <action id="Adtui.ZoomOutAction">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
@@ -28,6 +28,7 @@
   <action id="EditorResetFontSize">
     <keyboard-shortcut first-keystroke="shift ctrl 0" />
   </action>
+  <action id="ExpandAllRegions" />
   <action id="ExternalSystem.CollapseAll">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
@@ -40,11 +41,12 @@
     <keyboard-shortcut first-keystroke="shift meta comma" />
   </action>
   <action id="Forward">
-    <keyboard-shortcut first-keystroke="meta close_bracket" />
     <keyboard-shortcut first-keystroke="meta alt right" />
     <mouse-shortcut keystroke="button5" />
     <keyboard-shortcut first-keystroke="shift meta minus" />
+    <keyboard-shortcut first-keystroke="shift meta equals" />
     <keyboard-shortcut first-keystroke="shift meta semicolon" />
+    <keyboard-shortcut first-keystroke="shift meta plus" />
   </action>
   <action id="GotoBookmark0" />
   <action id="GotoBookmark1" />
@@ -75,9 +77,7 @@
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
   <action id="JumpToLastWindow" />
-  <action id="Maven.CollapseAll">
-    <keyboard-shortcut first-keystroke="meta subtract" />
-  </action>
+  <action id="Maven.CollapseAll" />
   <action id="MinimizeCurrentWindow" />
   <action id="ParameterInfo" />
   <action id="ShowRecentTests" />
