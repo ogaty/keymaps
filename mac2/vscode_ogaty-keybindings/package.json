@@ -1,0 +1,135 @@
+{
+  "name": "ogaty-keybindings",
+  "displayName": "ogaty-keybindings",
+  "description": "ogaty keybindings",
+  "version": "0.0.6",
+  "publisher": "Yuji Ogata",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "repository": "https://git.jetbrains.space/ogatism/others/ogaty-keybindings.git",
+  "icon": "icon.png",
+  "categories": [
+    "Keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "cmd+[Minus]",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+      },
+      {
+        "key": "shift+cmd+[Minus]",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+      },
+      {
+        "key": "shift+cmd+[Semicolon]",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+      },
+      {
+        "key": "shift+cmd+,",
+        "command": "-editor.action.inPlaceReplace.up",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "shift+cmd+.",
+        "command": "-breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible && breadcrumbsVisible"
+      },
+      {
+        "key": "shift+cmd+.",
+        "command": "-editor.action.inPlaceReplace.down",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "shift+cmd+.",
+        "command": "-breadcrumbs.toggleToOn",
+        "when": "!config.breadcrumbs.enabled"
+      },
+      {
+        "key": "shift+cmd+[Semicolon]",
+        "command": "-workbench.action.zoomIn"
+      },
+      {
+        "key": "shift+cmd+[Minus]",
+        "command": "-workbench.action.zoomIn"
+      },
+      {
+        "key": "cmd+numpad_subtract",
+        "command": "-workbench.action.zoomOut"
+      },
+      {
+        "key": "cmd+[IntlRo]",
+        "command": "-workbench.action.zoomOut"
+      },
+      {
+        "key": "cmd+numpad_add",
+        "command": "-workbench.action.zoomIn"
+      },
+      {
+        "key": "cmd+numpad0",
+        "command": "-workbench.action.zoomReset"
+      },
+      {
+        "key": "cmd+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+      },
+      {
+        "key": "cmd+k cmd+j",
+        "command": "-editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+      },
+      {
+        "key": "cmd+k cmd+k",
+        "command": "-editor.action.selectFromAnchorToCursor",
+        "when": "editorTextFocus && selectionAnchorSet"
+      },
+      {
+        "key": "shift+cmd+.",
+        "command": "editor.action.fontZoomIn"
+      },
+      {
+        "key": "shift+cmd+,",
+        "command": "editor.action.fontZoomOut"
+      },
+      {
+        "key": "shift+cmd+[IntlRo]",
+        "command": "editor.emmet.action.wrapWithAbbreviation"
+      },
+      {
+        "key": "cmd+k cmd+5",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "cmd+d",
+        "command": "editor.action.duplicateSelection",
+        "when": "editorFocus"
+      },
+      {
+        "key": "cmd+j",
+        "command": "editor.action.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "cmd+k cmd+j",
+        "command": "deleteAllLeft",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "cmd+k cmd+k",
+        "command": "deleteAllRight",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "ctrl+k",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+      }
+    ]
+  }
+}
