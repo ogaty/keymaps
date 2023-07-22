@@ -8,18 +8,20 @@
     <name>Ogaty Keymap</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="info@ogatism.jp" url="https://ogatism.jp">ogatism</vendor>
+    <vendor email="info@ogatism.jp" url="https://ogatism.jp">Yuji Ogata</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
         <h1>Keybind remap</h1>
-        I have made the plugin for ogaty common keymaps.
+        I have made the plugin for ogaty common keymaps.<br>
         This is the perfect keybinding for me.
     ]]>
     </description>
     <change-notes><![CDATA[
+        1.0.5<br>
+        join lines<br>
         1.0.3<br>
         jump caret<br>
         1.0.2<br>

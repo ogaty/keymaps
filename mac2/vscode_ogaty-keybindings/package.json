@@ -1,8 +1,8 @@
 {
-  "name": "ogaty-keybindings",
-  "displayName": "ogaty-keybindings",
-  "description": "ogaty keybindings",
-  "version": "0.0.6",
+  "name": "ogaty-keymap",
+  "displayName": "Ogaty Keymap",
+  "description": "ogaty keymap",
+  "version": "0.0.7",
   "publisher": "Yuji Ogata",
   "engines": {
     "vscode": "^1.70.0"
@@ -15,19 +15,9 @@
   "contributes": {
     "keybindings": [
       {
-        "key": "cmd+[Minus]",
-        "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack"
-      },
-      {
-        "key": "shift+cmd+[Minus]",
-        "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward"
-      },
-      {
-        "key": "shift+cmd+[Semicolon]",
-        "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward"
+        "key": "cmd+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
       },
       {
         "key": "shift+cmd+,",
@@ -89,6 +79,21 @@
         "when": "editorTextFocus && selectionAnchorSet"
       },
       {
+        "key": "cmd+[Minus]",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+      },
+      {
+        "key": "shift+cmd+[Minus]",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+      },
+      {
+        "key": "shift+cmd+[Semicolon]",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+      },
+      {
         "key": "shift+cmd+.",
         "command": "editor.action.fontZoomIn"
       },
@@ -129,6 +134,14 @@
         "key": "ctrl+k",
         "command": "editor.action.deleteLines",
         "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "cmd+l",
+        "command": "workbench.action.gotoLine"
+      },
+      {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
       }
     ]
   }
