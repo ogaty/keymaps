@@ -2,7 +2,7 @@
   "name": "ogaty-keymap",
   "displayName": "Ogaty Keymap",
   "description": "ogaty keymap",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "Yuji Ogata",
   "engines": {
     "vscode": "^1.70.0"
@@ -142,6 +142,11 @@
       {
         "key": "ctrl+g",
         "command": "-workbench.action.gotoLine"
+      },
+      {
+          "key": "cmd+r",
+          "command": "editor.action.startFindReplaceAction",
+          "when": "editorFocus || editorIsOpen"
       }
     ]
   }
