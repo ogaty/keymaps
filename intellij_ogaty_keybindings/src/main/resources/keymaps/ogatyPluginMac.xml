@@ -28,6 +28,8 @@
   <action id="ToggleBookmark7" />
   <action id="ToggleBookmark8" />
   <action id="ToggleBookmark9" />
+  <action id="GotoTest" />
+  <action id="ServiceView.ShowServices" />
   <action id="Adtui.ZoomOutAction">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
@@ -100,5 +102,9 @@
   </action>
   <action id="EditorJoinLines">
     <keyboard-shortcut first-keystroke="meta j" />
+  </action>
+  <action id="SurroundWith">
+    <keyboard-shortcut first-keystroke="meta alt t" />
+    <keyboard-shortcut first-keystroke="shift meta t" />
   </action>
 </keymap>
