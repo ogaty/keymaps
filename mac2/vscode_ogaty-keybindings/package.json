@@ -1,8 +1,8 @@
 {
   "name": "ogaty-keymap",
   "displayName": "Ogaty Keymap",
-  "description": "ogaty keymap",
-  "version": "0.1.0",
+  "description": "ogaty keymap with snippet",
+  "version": "0.2.0",
   "publisher": "Yuji Ogata",
   "engines": {
     "vscode": "^1.70.0"
@@ -160,6 +160,12 @@
         "key": "alt+cmd+t",
         "command": "-workbench.action.closeOtherEditors"
       }
+    ],
+    "snippets": [
+        {
+            "language": "html",
+            "path": "./snippets/html.json"
+        }
     ]
   }
 }
