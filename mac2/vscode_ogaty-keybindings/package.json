@@ -2,7 +2,7 @@
   "name": "ogaty-keymap",
   "displayName": "Ogaty Keymap",
   "description": "ogaty keymap with snippet",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "publisher": "Yuji Ogata",
   "engines": {
     "vscode": "^1.70.0"
