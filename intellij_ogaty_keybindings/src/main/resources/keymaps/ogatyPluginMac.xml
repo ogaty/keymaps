@@ -117,4 +117,11 @@
     <keyboard-shortcut first-keystroke="meta alt enter" />
     <keyboard-shortcut first-keystroke="shift meta enter" />
   </action>
+  <action id="EditorCutLineBackward">
+    <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta j" />
+  </action>
+  <action id="EditorCutLineEnd">
+    <keyboard-shortcut first-keystroke="ctrl k" />
+    <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta k" />
+  </action>
 </keymap>
