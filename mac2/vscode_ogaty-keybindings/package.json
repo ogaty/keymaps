@@ -2,7 +2,7 @@
   "name": "ogaty-keymap",
   "displayName": "Ogaty Keymap",
   "description": "ogaty keymap with snippet",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "publisher": "Yuji Ogata",
   "engines": {
     "vscode": "^1.70.0"
@@ -109,6 +109,10 @@
         "key": "cmd+k cmd+5",
         "command": "editor.action.jumpToBracket",
         "when": "editorTextFocus"
+      },
+      {
+        "key": "cmd+k cmd+6",
+        "command": "editor.emmet.action.matchTag"
       },
       {
         "key": "cmd+d",
