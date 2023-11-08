@@ -20,6 +20,8 @@
     ]]>
     </description>
     <change-notes><![CDATA[
+        1.0.9<br>
+        EditorDeleteLine<br>
         1.0.8<br>
         EditorCutLineBackward<br>
         1.0.7<br>

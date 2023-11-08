@@ -121,7 +121,10 @@
     <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta j" />
   </action>
   <action id="EditorCutLineEnd">
-    <keyboard-shortcut first-keystroke="ctrl k" />
     <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta k" />
+  </action>
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="meta back_space" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
   </action>
 </keymap>
