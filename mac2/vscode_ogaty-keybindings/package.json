@@ -2,7 +2,7 @@
   "name": "ogaty-keymap",
   "displayName": "Ogaty Keymap",
   "description": "ogaty keymap with snippet",
-  "version": "0.4.0",
+  "version": "0.5.1",
   "publisher": "Yuji Ogata",
   "engines": {
     "vscode": "^1.70.0"
@@ -81,88 +81,115 @@
       {
         "key": "cmd+[Minus]",
         "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack"
+        "when": "canNavigateBack && isMac"
       },
       {
         "key": "shift+cmd+[Minus]",
         "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward"
+        "when": "canNavigateForward && isMac"
       },
       {
         "key": "shift+cmd+[Semicolon]",
         "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward"
+        "when": "canNavigateForward && isMac"
       },
       {
         "key": "shift+cmd+.",
-        "command": "editor.action.fontZoomIn"
+        "command": "editor.action.fontZoomIn",
+        "when": "isMac"
       },
       {
         "key": "shift+cmd+,",
-        "command": "editor.action.fontZoomOut"
+        "command": "editor.action.fontZoomOut",
+        "when": "isMac"
       },
       {
         "key": "shift+cmd+[IntlRo]",
-        "command": "editor.emmet.action.wrapWithAbbreviation"
+        "command": "editor.emmet.action.wrapWithAbbreviation",
+        "when": "isMac"
       },
       {
         "key": "cmd+k cmd+5",
         "command": "editor.action.jumpToBracket",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && isMac"
       },
       {
         "key": "cmd+k cmd+6",
-        "command": "editor.emmet.action.matchTag"
+        "command": "editor.emmet.action.matchTag",
+        "when": "isMac"
       },
       {
         "key": "cmd+d",
         "command": "editor.action.duplicateSelection",
-        "when": "editorFocus"
+        "when": "editorFocus && isMac"
       },
       {
         "key": "cmd+j",
         "command": "editor.action.joinLines",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && isMac"
       },
       {
         "key": "cmd+k cmd+j",
         "command": "deleteAllLeft",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && isMac"
       },
       {
         "key": "cmd+k cmd+k",
         "command": "deleteAllRight",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && isMac"
       },
       {
         "key": "ctrl+k",
         "command": "editor.action.deleteLines",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && isMac"
       },
       {
         "key": "cmd+l",
-        "command": "workbench.action.gotoLine"
+        "command": "workbench.action.gotoLine",
+        "when": "isMac"
       },
       {
         "key": "ctrl+g",
-        "command": "-workbench.action.gotoLine"
+        "command": "-workbench.action.gotoLine",
+        "when": "isMac"
       },
       {
           "key": "cmd+r",
           "command": "editor.action.startFindReplaceAction",
-          "when": "editorFocus || editorIsOpen"
+          "when": "editorFocus || editorIsOpen && isMac"
       },
       {
         "key": "cmd+e",
-        "command": "-editor.action.findWithSelection"
+        "command": "-editor.action.findWithSelection",
+        "when": "isMac"
       },
       {
         "key": "cmd+e",
-        "command": "workbench.action.openPreviousEditorFromHistory"
+        "command": "workbench.action.openPreviousEditorFromHistory",
+        "when": "isMac"
       },
       {
         "key": "alt+cmd+t",
-        "command": "-workbench.action.closeOtherEditors"
+        "command": "-workbench.action.closeOtherEditors",
+        "when": "isMac"
+      },
+      {
+        "key": "ctrl+oem_minus",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack && isWindows"
+      },
+      {
+        "key": "ctrl+oem_minus",
+        "command": "-workbench.action.zoomOut"
+      },
+      {
+        "key": "ctrl+shift+oem_minus",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward && isWindows"
+      },
+      {
+        "key": "ctrl+shift+oem_minus",
+        "command": "-workbench.action.zoomOut"
       }
     ],
     "snippets": [
