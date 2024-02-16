@@ -2,7 +2,7 @@
   "name": "ogaty-keymap",
   "displayName": "Ogaty Keymap",
   "description": "ogaty keymap with snippet",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "publisher": "Yuji Ogata",
   "engines": {
     "vscode": "^1.70.0"
@@ -190,6 +190,26 @@
       {
         "key": "ctrl+shift+oem_minus",
         "command": "-workbench.action.zoomOut"
+      },
+      {
+        "key": "ctrl+l",
+        "command": "workbench.action.gotoLine",
+        "when": "isWindows"
+      },
+      {
+          "key": "ctrl+g",
+          "command": "-workbench.action.gotoLine",
+          "when": "isWindows"
+      },
+      {
+          "key": "ctrl+l",
+          "command": "-expandLineSelection",
+          "when": "textInputFocus && isWindows"
+      },
+      {
+          "key": "ctrl+l",
+          "command": "-workbench.action.chat.newChat",
+          "when": "hasChatProvider && inChat && isWindows"
       }
     ],
     "snippets": [

@@ -10,3 +10,4 @@
 - 0.3.1 update snippets
 - 0.4.0 matchtag
 - 0.5.1 isMac
+- 0.6.0 windows keybinding gotoline
