@@ -2,6 +2,10 @@
 
 # ogaty keymaps
 
+## 1.2.1
+select current line
+## 1.2.0
+font size keys
 ## 1.1.0  
 compatible with build 223  
 ## 1.0.9  
